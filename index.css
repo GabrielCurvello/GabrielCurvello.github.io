@@ -7,7 +7,7 @@ body {
       radial-gradient(
         ellipse at bottom,
         var(--dark-color),
-        rgba(18, 19, 19, 0.46)
+        rgba(145, 233, 255, 0.2)
       ),
       repeating-linear-gradient(
         220deg,
@@ -289,7 +289,7 @@ body {
     }
     
     .line4 {
-        top: 43%;
+        top: 44%;
         text-align: center;
         font-size: 12px;
     }
