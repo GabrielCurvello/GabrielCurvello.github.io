@@ -287,4 +287,10 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+    
+    .line4 {
+        top: 49%;
+        text-align: center;
+        font-size: 12px;
+    }
 }
