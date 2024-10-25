@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html id="Login" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/Registro.css">
+    <title>Cadastrar</title>
+</head>
+
+<body>
+    <div class="divmain">
+        <div class="div_registro">
+            <div class="card_registro">
+                <h1>RELATÓRIO</h1>
+                
+                <label for="filtro-periodo">Filtrar por:</label>
+
+                <select id="filtro-periodo">
+                    <option value="todos">Todos</option>
+                    <option value="semana">Última Semana</option>
+                    <option value="mes">Último Mês</option>
+                </select>
+
+                <table id="tabela-registros">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Tipo</th>
+                            <th>Localização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <dialog id="dialog-editar">
+        <form id="form-editar" method="dialog">
+            <h3>Editar Registro</h3>
+            <label for="edit-tipo">Tipo:</label>
+            <select id="edit-tipo">
+                <option value="entrada">Entrada</option>
+                <option value="intervalo">Intervalo</option>
+                <option value="volta-intervalo">Volta Intervalo</option>
+                <option value="saida">Saída</option>
+            </select>
+            <label for="edit-hora">Hora:</label>
+            <input type="time" id="edit-hora" required>
+            <menu>
+                <button id="btn-salvar-edicao">Salvar</button>
+                <button type="button" onclick="document.getElementById('dialog-editar').close()">Cancelar</button>
+            </menu>
+        </form>
+    </dialog>
+
+    <script src="relatorio.js"></script>
+</body>
+</html>

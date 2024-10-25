@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html id="Login" lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/index.css">
+  <title>Sistema de Ponto Eletronico</title>
+</head>
+
+<body>
+    <div class="divmain">
+      <div class="div_boas_vindas">
+        <img class="img_main" src="img/reuniao.png" alt="animated">
+      </div>
+      <div class="div_login">
+        <div class="card_login">
+          <h1>CONTROLE DE PONTO</h1>
+          <div class="txt">
+            <p id="dia-semana"></p>
+            <p id="data-atual"></p>
+            <p id="hora-atual"></p>
+          </div>
+          <button id="btn-registrar-ponto" class="btn-registrar-ponto">Registrar Ponto</button>
+          <nav class="navbar">
+            <a href="javascript:void(0);" id="link-justificativa">JUSTIFICATIVA AUSÊNCIA</a>
+            <a href="Registro.html">RELATORIO</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <dialog id="dialog-ponto">
+      <p id="dialog-data"></p>
+      <p id="dialog-hora"></p>
+      <select name="register-type" id="register-type">
+          <option value="entrada">Entrada</option>
+          <option value="intervalo">Intervalo</option>
+          <option value="volta-intervalo">Volta Intervalo</option>
+          <option value="saida">Saída</option>
+      </select>
+      <button id="btn-dialog-register">Registrar</button>
+      <p id="dialog-ultimo-registro"></p>
+      <button id="dialog-fechar">X</button>
+  </dialog>
+
+  <div id="alerta-ponto-registrado" class="hidden">
+      <p>Ponto registrado com sucesso!</p>
+  </div>
+
+  <dialog class="dialog-justificativa" id="dialog-justificativa">
+    <form id="form-justificativa" method="dialog">
+      <label for="justificativa-texto">Justificativa:</label>
+      <p></p>
+      <textarea id="justificativa-texto" rows="4" placeholder="Explique o motivo da ausência"></textarea>
+      <p></p>
+      <label for="justificativa-arquivo">Anexar Arquivo:</label>
+      <p></p>
+      <input type="file" id="justificativa-arquivo" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
+      
+      <menu>
+        <button id="btn-salvar-justificativa">Salvar Justificativa</button>
+        <button type="button" onclick="document.getElementById('dialog-justificativa').close()">Cancelar</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

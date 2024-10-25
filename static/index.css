@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+body * {
+    box-sizing: border-box;
+}
+.divmain{
+    width: 100vw;
+    height: 100vh;
+    background: #363753;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_boas_vindas{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fefefe;
+}
+.div_login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #dfe3ee;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.txt{
+    color: #0000009a;
+    font-weight: 800;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fefefe;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000026;
+}
+.card_login > h1 {
+    color: #5cd2c6;
+    font-weight: 800;
+    margin: 0;
+}
+.btn-registrar-ponto{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase ;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000a7 ;
+    background: #5cd2c6;
+    cursor: pointer;
+    box-shadow: 0px 10px 35px #00000052;
+    transition: all 0.2s ease;
+}
+.btn-registrar-ponto:active{
+    transform: scale(0.94);
+}
+.btn-registrar-ponto:hover{
+    background-color: #3b968d;
+}
+.navbar > a{
+    color: #3b968d;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7px 0px;
+    transition: 0.5s;
+}
+.navbar > a:hover{
+    color: #5cd2c6;
+}
+
+.img_main{
+    width: 45vw;
+}
+
+.dialog-justificativa{
+    text-align: center;
+}
+
+#dialog-fechar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+#alerta-ponto-registrado {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
